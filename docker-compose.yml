@@ -1,0 +1,16 @@
+version: "2"
+services:
+  pokemongo:
+    image: python:2.7
+    container_name: pokemongo
+    hostname: pokemongo
+    working_dir: "/usr/src/myapp"
+    restart: always
+    environment:
+      - "AUTH_TYPE=Google"
+      - "USER=someone@gmail.com"
+      - "PASSWORD=yourpassword"
+      - "LOCATION=Somewhere,Hong Kong"
+    volumes:
+      - ".:/usr/src/myapp"    
+    command: "/usr/src/myapp/entry.sh > /usr/src/myapp/pkgo.log"
