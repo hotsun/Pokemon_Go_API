@@ -41,10 +41,11 @@ python ./main.py -t ptc -u yourusername -p yourpassword123 -l "123 Some Address 
 If you're authenticating with Google and have 2 factor authentication enabled for you account, you should
 create an [application specific password](https://support.google.com/accounts/answer/185833?hl=en).
 
-### Using Docker
+## Using Docker
 Requirements:
-docker version > 1.10.0
-docker compose version > 1.6.0 (using docker compose version 2)
+
+1. docker version > 1.10.0
+1. docker compose version > 1.6.0 (using docker compose version 2)
 
 Edit the login info in docker compose file
 ```bash
